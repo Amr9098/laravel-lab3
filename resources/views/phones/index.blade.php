@@ -28,13 +28,7 @@
                     <div class="">
                         @auth
                             <a href="{{ url('/dashboard') }}" class="text-muted">Dashboard</a>
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-
-                                <button type="submit" class="btn btn-link">
-                                    {{ __('Log Out') }}
-                                </button>
-                            </form>
+                         
                         @else
                             <a href="{{ route('login') }}" class="text-muted">Log in</a>
 
