@@ -50,7 +50,6 @@ class phoneController extends Controller
                 "users_id"=> Auth::id()
             ]);
 
-            // return "amrrrrrr";
             // return view('phones.index');
             return redirect()->route("phones.index");
 
