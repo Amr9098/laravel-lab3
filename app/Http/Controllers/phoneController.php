@@ -45,7 +45,7 @@ class phoneController extends Controller
         // $phone->users_id= Auth::id();
         // $phone->phone =$request->phone;
         // $phone->save();
-            Phone::create([
+            Phone::updateOrCreate([
                 "phone" =>$request->phone,
                 "users_id"=> Auth::id()
             ]);
